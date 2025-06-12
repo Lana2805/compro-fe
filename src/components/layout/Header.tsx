@@ -48,7 +48,7 @@ const Header = () => {
             items={[
               { label: 'Sambutan Pemimpin', href: '/tes/toefl' },
               { label: 'Visi & Misi', href: '/tes/ielts' },
-              { label: 'Struktur', href: '/tes/toafl' },
+              { label: 'Struktur', href: '/about/structures' },
               { label: 'Program Kerja', href: '/tes/ielts' },
               { label: 'Indikator Kerja', href: '/tes/toafl' },
             ]}

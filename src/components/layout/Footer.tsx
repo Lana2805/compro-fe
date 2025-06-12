@@ -7,7 +7,7 @@ import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#f4f8f9] text-black py-8">
+    <footer className="bg-[#f4f8f9] text-black ">
      {/* Kontak Section */}
       <div className="py-10 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
                     </a>
                   </p>
                   <p>
-                    <a href="https://wa.me/089601276431" className="text-sm font-bold hover:text-[#3c679b]">
-                      0896-0127-6431 (Whatsapp)
+                    <a href="https://wa.me/6282124679915" className="text-sm font-bold hover:text-[#3c679b]">
+                      0821-2467-9915 (Whatsapp)
                     </a>
                   </p>
                 </div>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                   <p className="text-xl font-light">Alamat Email</p>
                   <p>
                     <a href="mailto:pusatbahasa@apps.uinjkt.ac.id" className="text-sm font-bold hover:text-[#3c679b]">
-                      pusatbahasa[@]apps.uinjkt.ac.id
+                      pusatbahasa@apps.uinjkt.ac.id
                     </a>
                   </p>
                 </div>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xl font-light">Alamat Kampus</p>
-                  <p className='text-sm font-semibold max-w-[16rem]'>
+                  <p className='text-sm font-semibold max-w-xs'>
                     Jalan Kertamukti No. 5, Pisangan, Ciputat Timur, Cireundeu,
                     Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419
                   </p>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1 lg:col-span-2">
             <h2 className="text-3xl font-semibold mb-6">Media Sosial</h2>
             <div className="flex gap-4 mb-6">
-              <a href="https://www.instagram.com/uinjktofficial" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/ppbuinjakarta" target="_blank" rel="noopener noreferrer">
                 < FaInstagram className="text-3xl text-[#3c679b] hover:text-pink-500" />
               </a>
               <a href="https://www.youtube.com/@UINSyarifHidayatullahJakarta" target="_blank" rel="noopener noreferrer">
