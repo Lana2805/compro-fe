@@ -22,12 +22,13 @@ const Header = () => {
           <Image
             src="/images/logo.png"
             alt="Logo UIN"
-            width={120}
-            height={120}
+            width={80}
+            height={80}
           />
-          <span className="font-bold text-lg text-gray-800">
-            UPT Pusat Bahasa
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="text-2xl font-bold text-black">UPT</span>
+            <span className="text-ml text-[#5c5c5c] tracking-wide">PUSAT BAHASA</span>
+          </div>
         </div>
 
         {/* Tengah: Dropdown Menu */}

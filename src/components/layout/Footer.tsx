@@ -7,7 +7,7 @@ import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#f4f8f9] text-black py-10">
+    <footer className="bg-[#f4f8f9] text-black py-8">
      {/* Kontak Section */}
       <div className="py-10 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xl font-light">Alamat Kampus</p>
-                  <p className='text-sm font-semibold max-w-xs'>
+                  <p className='text-sm font-semibold max-w-[16rem]'>
                     Jalan Kertamukti No. 5, Pisangan, Ciputat Timur, Cireundeu,
                     Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419
                   </p>
@@ -100,10 +100,10 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="bg-[#3c679b] text-white text-center py-8">
-        <p className="text-sm">
+      <div className="bg-[#3c679b] text-white text-center py-6">
+        <p className="text-ml">
           2025 ©{" "}
-          <a href="https://uinjkt.ac.id" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="https://uinjkt.ac.id" target="_blank" rel="noopener noreferrer" >
             UIN Syarif Hidayatullah Jakarta
           </a>
         </p>
