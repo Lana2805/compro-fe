@@ -12,7 +12,9 @@ interface Structure {
   gambar: string;
 }
 
-const BASE_URL = "http://127.0.0.1:8000/storage/";
+const BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+const BASE_IMG = process.env.NEXT_PUBLIC_API_BASE_IMG;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 const ProfileCard = ({
   nama = "",
@@ -22,7 +24,7 @@ const ProfileCard = ({
 }: Structure) => (
   <div className="w-40 sm:w-48 md:w-52 shadow-xl rounded-lg overflow-hidden">
     <img
-      src={`${BASE_URL}${gambar}`}
+      src={`${BASE_IMG}${gambar}`}
       alt={nama}
       className="w-full h-auto object-cover"
     />
@@ -38,12 +40,12 @@ export default function StrukturOrganisasi() {
   const [data, setData] = useState<Structure[]>([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/v1/structures", {
+    fetch(`${BASE_URL}/v1/structures`, {
       headers: {
-        "X-API-KEY": "1234567890abcdef",
+        "X-API-KEY": API_KEY!,
         "Content-Type": "application/json",
-      },
-    })
+  },
+})
       .then((res) => res.json())
       .then((res) => {
         console.log("Response", res);
