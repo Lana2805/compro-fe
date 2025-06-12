@@ -5,6 +5,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DropdownButton from '../DropdownButton'; 
+import LanguageSelector from "../LanguageSelector";
+
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
@@ -20,8 +22,8 @@ const Header = () => {
           <Image
             src="/images/logo.png"
             alt="Logo UIN"
-            width={50}
-            height={50}
+            width={120}
+            height={120}
           />
           <span className="font-bold text-lg text-gray-800">
             UPT Pusat Bahasa
@@ -61,10 +63,8 @@ const Header = () => {
 
         {/* Kanan: Ganti Bahasa + Search */}
         <div className="flex items-center space-x-4">
-          <button className="border px-3 py-1 rounded hover:bg-gray-100 text-sm">
-            ID / EN
-          </button>
-          <button className="text-gray-600 hover:text-gray-800">
+          <LanguageSelector />
+          <button className="text-white rounded-full w-10 h-10 flex items-center justify-center bg-[#5fa4f4] hover:text-gray-800">
             <svg
               className="w-5 h-5"
               fill="none"
