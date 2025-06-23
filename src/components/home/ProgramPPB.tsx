@@ -43,14 +43,14 @@ export default function ProgramPPB() {
         <h2 className="text-2xl font-bold">Program Pusat Bahasa</h2>
         <Link
           href="/program"
-          className="text-black hover:underline text-sm font-medium"
+          className="text-gray-600 hover:text-gray-800 font-medium transition-colors"
         >
           View All Programs
         </Link>
       </div>
 
       {/* 3 Program Pertama */}
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 justify-center">
         {programs.slice(0, 3).map((program) => (
           <div
             key={program.id}
@@ -73,12 +73,13 @@ export default function ProgramPPB() {
               dangerouslySetInnerHTML={{ __html: program.deskripsi }}
             />
 
-            <Link
-              href={`/program/${program.slug}`}
-              className="inline-block bg-orange-400 hover:bg-orange-500 text-black font-light text-sm text-center px-[125px] py-2 rounded-md transition duration-300 shadow"
-            >
-              Lihat Artikel
-            </Link>
+        <Link
+          href={`/program/${program.slug}`}
+          className="block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-medium py-2 px-4 rounded transition-colors duration-200 text-center"
+        >
+          Lihat Program
+        </Link>
+
           </div>
         ))}
       </div>

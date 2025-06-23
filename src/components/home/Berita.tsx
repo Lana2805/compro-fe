@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Berita {
   id: number;
@@ -143,9 +144,13 @@ const ProgramSection: React.FC = () => {
         </div>
         
         {/* View All Link */}
-        <button className="text-gray-600 hover:text-gray-800 font-medium transition-colors">
-          View All
-        </button>
+        <Link
+            href="/berita"
+            className="text-gray-600 hover:text-gray-800 font-medium transition-colors"
+            >
+            View All Artikel
+        </Link>
+
       </div>
 
       {/* Berita Cards Grid */}
@@ -203,9 +208,13 @@ const ProgramSection: React.FC = () => {
                 </p>
                 
                 {/* Action Button */}
-                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-medium py-2 px-4 rounded transition-colors duration-200">
-                  Lihat Artikel
-                </button>
+                <Link
+                    href={`/berita/${beritaItem.slug}`}
+                    className="block w-full bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-medium py-2 px-4 rounded transition-colors duration-200 text-center"
+                    >
+                    Lihat Artikel
+                </Link>
+
               </div>
             </div>
           ))}
