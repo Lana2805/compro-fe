@@ -55,8 +55,8 @@ const Header = () => {
             <DropdownButton
               title="Tentang Kami"
               items={[
-                { label: 'Sambutan Pemimpin', href: '/tes/toefl' },
-                { label: 'Visi & Misi', href: '/tes/ielts' },
+                { label: 'Sambutan Pemimpin', href: '/about/sambutan' },
+                { label: 'Visi & Misi', href: '/about/visimisi' },
                 { label: 'Struktur', href: '/about/structures' },
                 { label: 'Program Kerja', href: '/tes/ielts' },
                 { label: 'Indikator Kerja', href: '/tes/toafl' },

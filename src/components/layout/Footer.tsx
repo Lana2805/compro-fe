@@ -64,9 +64,11 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xl font-light">Alamat Kampus</p>
-                  <p className='text-sm font-semibold max-w-xs'>
+                  <p className='text-sm font-semibold max-w-xs hover:text-[#3c679b]'>
+                    <a href="https://maps.app.goo.gl/FmERKTsMc6v8Qexg9">
                     Jalan Kertamukti No. 5, Pisangan, Ciputat Timur, Cireundeu,
                     Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15419
+                    </a> 
                   </p>
                 </div>
               </li>

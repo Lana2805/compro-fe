@@ -31,7 +31,7 @@ const ProfileCard = ({
     <div className="bg-[#51a3f1] font-semibold text-white py-2 px-2 text-ml  text-center">
       {nama}
       <br />
-      <span className="text-sm font-light ">{detail || jabatan}</span>
+      <span className="text-sm font-light ">{jabatan}</span>
     </div>
   </div>
 );
@@ -54,13 +54,13 @@ export default function StrukturOrganisasi() {
       .catch((err) => console.error("Fetch error:", err));
   }, []);
 
-  const kepala = data.filter((d) => d.jabatan.toLowerCase() === "ketua");
+  const kepala = data.filter((d) => d.jabatan.toLowerCase() === "kepala pusat pengembangan bahasa");
   const koordinator = data.filter((d) =>
     d.jabatan.toLowerCase().includes("koordinator")
   );
   const staf = data.filter(
     (d) =>
-      !["ketua"].includes(d.jabatan.toLowerCase()) &&
+      !["kepala pusat pengembangan bahasa"].includes(d.jabatan.toLowerCase()) &&
       !d.jabatan.toLowerCase().includes("koordinator")
   );
 

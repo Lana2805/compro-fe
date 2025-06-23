@@ -1,10 +1,10 @@
-import type { NextConfig } from "next";
+  import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  images: {
-    domains: ['http://127.0.0.1:8000'],
-  },
-};
+  const nextConfig: NextConfig = {
+    /* config options here */
+    images: {
+      domains: ['http://127.0.0.1:8000'],
+    },
+  };
 
-export default nextConfig;
+  export default nextConfig;
