@@ -8,6 +8,7 @@ export default function Home() {
     <div className="max-w-7xl mx-auto">
       < Caraousel />
       <ProgramPPB />
+      
     </div>
   );
 }
