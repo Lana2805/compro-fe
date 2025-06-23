@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
@@ -50,7 +51,7 @@ const ProgramSection: React.FC = () => {
         const response = await axios.get<ApiResponse>('http://127.0.0.1:8000/api/v1/berita', {
           headers: {
             'Content-Type': 'application/json',
-            'x-api-key': process.env.NEXT_PUBLIC_API_KEY || 'your-api-key-here',
+            'x-api-key':  'mysecretapippb123987',
           },
           timeout: 10000, // 10 detik timeout
         });
