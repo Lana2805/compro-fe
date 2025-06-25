@@ -48,8 +48,6 @@ const Header = () => {
                 { label: 'Program Tes Bahasa', href: '/layanan/konsultasi' },
                 { label: 'Kursus Bahasa', href: '/layanan/daftar-tes' },
                 { label: 'Penerjemahan & Proofreading', href: '/layanan/konsultasi' },
-                { label: 'Layanan Kerjasama', href: '/layanan/daftar-tes' },
-                { label: 'Kesempatan kerja', href: '/layanan/konsultasi' },
               ]}
             />
             <DropdownButton
@@ -60,13 +58,6 @@ const Header = () => {
                 { label: 'Struktur', href: '/about/structures' },
                 { label: 'Program Kerja', href: '/tes/ielts' },
                 { label: 'Indikator Kerja', href: '/tes/toafl' },
-              ]}
-            />
-            <DropdownButton
-              title="Data & Informasi"
-              items={[
-                { label: 'Latihan TOEFL', href: '/materi/toefl' },
-                { label: 'Video Pembelajaran', href: '/materi/video' },
               ]}
             />
           </nav>

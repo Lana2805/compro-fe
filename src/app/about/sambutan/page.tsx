@@ -1,5 +1,5 @@
 // src/app/sambutan-kepala-ppb/page.tsx
-"use client"; // Wajib: Karena menggunakan useState, useEffect, dan fetch di client-side
+"use client"; 
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
@@ -28,28 +28,18 @@ const LocalWelcomeMessageCard: React.FC<LocalWelcomeMessageCardProps> = ({
   personImageUrl,
 }) => {
   return (
-    <div className="bg-white py-5">
+    <div className="bg-white py-2">
       <div className="container mx-auto px-4">
         {/* Judul Halaman / Bagian */}
-       <div className="text-center mb-40">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+       <div className="text-center mb-16 md:mb-20 px-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
                 Sambutan Kepala Pusat Pengembangan Bahasa
             </h1>
 
-            {/* Untuk layar besar (>1000px), tampilkan satu baris dengan underline */}
-            <h1 className="hidden min-[1001px]:block text-3xl md:text-4xl font-bold text-gray-800 mb-2 underline decoration-yellow-400 underline-offset-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mt-2">
                 Universitas Islam Negeri Syarif Hidayatullah Jakarta
-            </h1>
-
-            {/* Untuk layar kecil (≤1000px), pecah jadi dua baris, hanya baris kedua yang ada underline */}
-            <div className="block min-[1001px]:hidden">
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-1">
-                Universitas Islam Negeri Syarif
-                </h1>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-800 underline decoration-yellow-400 underline-offset-8">
-                Hidayatullah Jakarta
-                </h1>
-            </div>
+            </h2>
+             <div className="mt-6 md:mt-8 w-2/3 md:w-1/2 max-w-lg mx-auto h-1.5 bg-yellow-400 rounded-full"></div>
         </div>
 
         {/* Konten Sambutan: Gambar & Teks */}
