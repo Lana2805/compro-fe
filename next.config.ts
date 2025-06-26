@@ -1,13 +1,5 @@
   import type { NextConfig } from "next";
 
-<<<<<<< HEAD
-  const nextConfig: NextConfig = {
-    /* config options here */
-    images: {
-      domains: ['http://127.0.0.1:8000'],
-    },
-  };
-=======
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
@@ -21,6 +13,5 @@ const nextConfig: NextConfig = {
     ],
   },
 };
->>>>>>> DaffaMalik12/daffadev
 
   export default nextConfig;

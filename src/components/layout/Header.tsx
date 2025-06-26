@@ -48,10 +48,7 @@ const Header = () => {
                 { label: 'Program Tes Bahasa', href: '/layanan/konsultasi' },
                 { label: 'Kursus Bahasa', href: '/layanan/daftar-tes' },
                 { label: 'Penerjemahan & Proofreading', href: '/layanan/konsultasi' },
-<<<<<<< HEAD
-=======
                 
->>>>>>> DaffaMalik12/daffadev
               ]}
             />
             <DropdownButton
@@ -61,19 +58,13 @@ const Header = () => {
                 { label: 'Visi & Misi', href: '/about/visimisi' },
                 { label: 'Struktur', href: '/about/structures' },
                 { label: 'Program Kerja', href: '/tes/ielts' },
-<<<<<<< HEAD
-                { label: 'Indikator Kerja', href: '/tes/toafl' },
-              ]}
-            />
-=======
               ]}
             />
            
->>>>>>> DaffaMalik12/daffadev
           </nav>
 
           {/* Kanan: Controls */}
-          <div className="flex items-center space-x-2 md:space-x-4">
+          <div className="flex text-white items-center space-x-2 md:space-x-4">
             {/* Language Selector - Hidden on small mobile */}
             <div className="hidden sm:block">
               <LanguageSelector />
