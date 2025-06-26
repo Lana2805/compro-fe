@@ -48,6 +48,10 @@ const Header = () => {
                 { label: 'Program Tes Bahasa', href: '/layanan/konsultasi' },
                 { label: 'Kursus Bahasa', href: '/layanan/daftar-tes' },
                 { label: 'Penerjemahan & Proofreading', href: '/layanan/konsultasi' },
+<<<<<<< HEAD
+=======
+                
+>>>>>>> DaffaMalik12/daffadev
               ]}
             />
             <DropdownButton
@@ -57,9 +61,15 @@ const Header = () => {
                 { label: 'Visi & Misi', href: '/about/visimisi' },
                 { label: 'Struktur', href: '/about/structures' },
                 { label: 'Program Kerja', href: '/tes/ielts' },
+<<<<<<< HEAD
                 { label: 'Indikator Kerja', href: '/tes/toafl' },
               ]}
             />
+=======
+              ]}
+            />
+           
+>>>>>>> DaffaMalik12/daffadev
           </nav>
 
           {/* Kanan: Controls */}
